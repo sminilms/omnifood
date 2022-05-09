@@ -85,6 +85,15 @@ body {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
+  /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child{
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid-center-v {
@@ -194,6 +203,28 @@ body {
   color: #b8651b;
   border-bottom: 1px solid transparent;
 }
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  /* padding: 3.2rem 4.8rem 4.8rem 4.8rem; */
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
 /* HELPER CLASS */
 /* best practice to add !important */
 .margin-right-sm {
